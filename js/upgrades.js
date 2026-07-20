@@ -26,10 +26,8 @@
       if (offer && offer.classList.contains('show') && offer.offsetParent !== null) belowTotal += offer.offsetHeight;
 
       var navbarH = navbar.offsetHeight || 72;
-      navbar.style.top = aboveTotal + 'px';
-
-      document.documentElement.style.setProperty('--banner-offset-above', aboveTotal + 'px');
-      document.documentElement.style.setProperty('--banner-offset-total', (aboveTotal + belowTotal) + 'px');
+      document.documentElement.style.setProperty('--banner-above', aboveTotal + 'px');
+      document.documentElement.style.setProperty('--banner-total', (aboveTotal + belowTotal) + 'px');
 
       document.querySelectorAll('.hero').forEach(function (hero) {
         hero.style.paddingTop = (navbarH + aboveTotal + belowTotal) + 'px';

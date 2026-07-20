@@ -51,6 +51,13 @@
   100% { transform: translateX(-50%); }
 }
 /* Navbar offset handled dynamically by JS recalcBannerOffset() */
+.navbar {
+  top: var(--banner-above, 0px) !important;
+  transition: top 0.3s ease, box-shadow var(--transition-base);
+}
+.navbar.scrolled {
+  top: 0 !important;
+}
 
 /* --- Floating Action Buttons --- */
 .floating-actions {
