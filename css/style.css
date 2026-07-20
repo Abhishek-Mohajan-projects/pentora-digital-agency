@@ -585,6 +585,9 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: var(--container-wide);
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .nav-brand {
@@ -2660,8 +2663,8 @@ p {
   }
 }
 
-/* --- Tablet & Mobile Navigation (1052px and below) --- */
-@media (max-width: 1052px) {
+/* --- Tablet & Mobile Navigation (1283px and below) --- */
+@media (max-width: 1283px) {
   .nav-menu,
   .nav-social,
   .btn-hire {
