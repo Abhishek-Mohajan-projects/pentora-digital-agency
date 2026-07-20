@@ -8,6 +8,38 @@
   // --- DOM Ready ---
   document.addEventListener('DOMContentLoaded', function () {
 
+    // ===================== BANNER OFFSET RECALK =====================
+    function recalcBannerOffset() {
+      var navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+
+      var aboveTotal = 0;
+      var belowTotal = 0;
+
+      var annBar = document.querySelector('.announcement-bar');
+      if (annBar && annBar.offsetParent !== null) aboveTotal += annBar.offsetHeight;
+
+      var holiday = document.querySelector('.holiday-notice');
+      if (holiday && holiday.classList.contains('show') && holiday.offsetParent !== null) aboveTotal += holiday.offsetHeight;
+
+      var offer = document.getElementById('offer-banner');
+      if (offer && offer.classList.contains('show') && offer.offsetParent !== null) belowTotal += offer.offsetHeight;
+
+      var navbarH = navbar.offsetHeight || 72;
+      navbar.style.top = aboveTotal + 'px';
+
+      document.documentElement.style.setProperty('--banner-offset-above', aboveTotal + 'px');
+      document.documentElement.style.setProperty('--banner-offset-total', (aboveTotal + belowTotal) + 'px');
+
+      document.querySelectorAll('.hero').forEach(function (hero) {
+        hero.style.paddingTop = (navbarH + aboveTotal + belowTotal) + 'px';
+      });
+      document.querySelectorAll('.page-header').forEach(function (ph) {
+        ph.style.paddingTop = (navbarH + aboveTotal + belowTotal + 40) + 'px';
+      });
+    }
+    window.recalcBannerOffset = recalcBannerOffset;
+
     // ===================== ANNOUNCEMENT BAR =====================
     (function announcementBar() {
       var bar = document.getElementById('announcement-bar');
@@ -31,6 +63,7 @@
             nav
           );
           document.body.classList.add('has-announcement');
+          recalcBannerOffset();
         }
       }
     })();
@@ -287,11 +320,12 @@
         '<button class="offer-banner-close" aria-label="Dismiss"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
       var main = document.querySelector('main') || document.body;
       main.parentNode.insertBefore(banner, main);
-      setTimeout(function () { banner.classList.add('show'); }, 2000);
+      setTimeout(function () { banner.classList.add('show'); recalcBannerOffset(); }, 2000);
 
       banner.querySelector('.offer-banner-close').addEventListener('click', function () {
         banner.classList.remove('show');
         localStorage.setItem('pentora_offer_hidden', '1');
+        recalcBannerOffset();
       });
     })();
 
@@ -1429,11 +1463,13 @@
         var body = document.body;
         body.insertBefore(notice, body.firstChild);
       }
+      recalcBannerOffset();
 
       notice.querySelector('.holiday-notice-close').addEventListener('click', function() {
         notice.classList.remove('show');
         notice.style.display = 'none';
         localStorage.setItem(HIDDEN_KEY, '1');
+        recalcBannerOffset();
       });
     })();
 

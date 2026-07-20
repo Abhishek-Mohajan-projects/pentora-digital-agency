@@ -50,23 +50,7 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-body.has-announcement .navbar {
-  top: 28px;
-  transition: top 0.3s ease, box-shadow var(--transition-base);
-}
-body.has-announcement .navbar.scrolled {
-  top: 0;
-}
-body.has-announcement .hero {
-  padding-top: calc(var(--navbar-height) + 28px);
-}
-body.has-announcement .section:first-of-type,
-body.has-announcement main > .section:first-child {
-  padding-top: calc(var(--navbar-height) + 28px + 60px);
-}
-body.has-announcement .page-404 {
-  padding-top: calc(var(--navbar-height) + 28px);
-}
+/* Navbar offset handled dynamically by JS recalcBannerOffset() */
 
 /* --- Floating Action Buttons --- */
 .floating-actions {
