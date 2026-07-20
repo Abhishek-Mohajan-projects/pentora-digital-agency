@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read the latest articles on digital marketing, web development, design, and branding by Pentora Digital.">
+  <title>Blog - Pentora Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <div class="brand-icon loader-brand"><img src="images/loader-img.png" alt="Pentora Digital"></div>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-percent">0%</div>
+      <div class="loader-text">Pentora Digital</div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon"><img src="images/logo.png" alt="Pentora Digital"></div>
+        <span>Pentora Digital</span>
+      </a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Gigs/Portfolio</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <div class="nav-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:20px;height:20px"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
+          <span class="icon-moon"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:20px;height:20px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </button>
+        <a href="contact.html" class="btn-hire">Hire Us</a>
+      </div>
+      <div class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <div class="mobile-menu-panel">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="portfolio.html" class="mobile-nav-link">Gigs/Portfolio</a>
+      <a href="skills.html" class="mobile-nav-link">Skills</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-nav-actions">
+        <a href="contact.html" class="btn btn-primary" style="text-align:center;justify-content:center;margin-top:16px">Hire Us</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>></span>
+        <span>Blog</span>
+      </div>
+      <h1>Our Blog</h1>
+      <p>Insights, tutorials, and tips on digital marketing, design, and development from our team.</p>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="blog-grid stagger-children">
+
+        <!-- Blog Card 1 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #6c3ce0, #8b5cf6)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">15</span>
+              <span class="date-month">Jan</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">SMM</span>
+            <h4>10 Social Media Trends to Watch in 2025</h4>
+            <p>Discover the top social media trends that will shape digital marketing strategies in 2025, from AI-driven content to short-form video dominance.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                5 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #f59e0b, #ef4444)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">08</span>
+              <span class="date-month">Jan</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">Design</span>
+            <h4>The Ultimate Guide to Logo Design</h4>
+            <p>Learn the principles of creating a memorable logo that captures your brand essence and stands out in a crowded marketplace.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                7 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #00d4aa, #00b894)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">02</span>
+              <span class="date-month">Jan</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">Development</span>
+            <h4>How to Create High-Converting Landing Pages</h4>
+            <p>A step-by-step guide to building landing pages that convert visitors into customers with proven design patterns and copywriting tips.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                6 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #3b82f6, #06b6d4)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">28</span>
+              <span class="date-month">Dec</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">SMM</span>
+            <h4>SEO vs SEM: What's the Difference?</h4>
+            <p>Understand the key differences between SEO and SEM, and learn when to use each strategy to maximize your online visibility and ROI.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                4 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #ec4899, #8b5cf6)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">20</span>
+              <span class="date-month">Dec</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">Design</span>
+            <h4>Brand Identity Design Best Practices</h4>
+            <p>Explore the essential elements of brand identity design and how to create a cohesive visual system that resonates with your target audience.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                8 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="blog-card">
+          <div class="blog-thumb" style="background: linear-gradient(135deg, #6366f1, #8b5cf6)">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:48px;height:48px;color:rgba(255,255,255,0.7)">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <div class="blog-date">
+              <span class="date-day">15</span>
+              <span class="date-month">Dec</span>
+            </div>
+          </div>
+          <div class="blog-body">
+            <span class="blog-category">Development</span>
+            <h4>WordPress vs Custom Development</h4>
+            <p>Compare WordPress and custom-built websites to determine which approach is best suited for your business needs and budget.</p>
+            <div class="blog-meta">
+              <span class="read-time">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px;vertical-align:-2px">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                5 min read
+              </span>
+              <a href="#">
+                Read More
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:14px;height:14px">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Let's Build Something Great Together</h2>
+        <p>Ready to elevate your digital presence? Get in touch and let's start your next project.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-icon"><img src="images/logo.png" alt="Pentora Digital"></div>
+          <h3>Pentora Digital</h3>
+          <p>We are a digital marketing agency dedicated to building brands that dominate the digital landscape through strategic marketing, stunning design, and data-driven results.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" style="width:18px;height:18px"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Gigs/Portfolio</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="portfolio.html">Social Media Marketing</a></li>
+            <li><a href="portfolio.html">Graphics Design</a></li>
+            <li><a href="portfolio.html">Landing Page Design</a></li>
+            <li><a href="portfolio.html">SEO/SEM</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on our latest work and digital marketing tips.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pentora Digital. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
