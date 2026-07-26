@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.portfolio-modal').forEach(mod => {
     mod.addEventListener('click', (e) => {
-      if (e.target === mod || e.target.classList.contains('modal-close') || e.target.closest('.modal-close')) {
+      if (e.target === mod || e.target.classList.contains('modal-close') || e.target.closest('.modal-close') || e.target.classList.contains('modal-close-btn')) {
         mod.classList.remove('active');
         document.body.style.overflow = '';
       }
